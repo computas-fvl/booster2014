@@ -29,7 +29,7 @@ public class ExampleUnitTest {
 	}
 
 	@Test
-	public void aZeroAndOneMustHavemax1() {
+	public void aZeroAndOneMustHaveMax1() {
 		assertEquals(instance.max(ZERO_ONE), 1);
 	}
 
