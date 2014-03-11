@@ -4,15 +4,16 @@ public class Example {
 
 	int max(int[] array) {
 		int m = array[0];
-		for (int element : array) {
-			if (elementAtPosition(element, m))
-				m = element;
+		for (int i : array) {
+			if (larger(i, m)) {
+				m = i;
+			}
 		}
 		return m;
 	}
 
-	private boolean elementAtPosition(int element, int m) {
-		return element > m;
+	private boolean larger(int i, int j) {
+		return i > j;
 	}
 
 }
